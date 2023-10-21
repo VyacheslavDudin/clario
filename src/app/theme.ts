@@ -42,4 +42,11 @@ export const theme = createTheme({
       h5: { fontSize: "16px" },
     },
   },
+  spacing: {
+    xs: "8px",
+    sm: "16px",
+    md: "20px",
+    lg: "24px",
+    xl: "40px",
+  },
 });
