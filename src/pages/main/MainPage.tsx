@@ -1,10 +1,11 @@
 import { Layout } from "src/layouts";
-import { IntroSection } from "./containers";
+import { IntroSection, FeaturesSection } from "./containers";
 
 export function MainPage() {
   return (
     <Layout>
       <IntroSection />
+      <FeaturesSection />
     </Layout>
   );
 }

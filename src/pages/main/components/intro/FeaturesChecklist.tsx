@@ -1,6 +1,7 @@
-import { Flex, Stack, Title } from "@mantine/core";
+import { Flex, Stack } from "@mantine/core";
+
+import { Text, Title } from "src/components";
 import { ReactComponent as TickIcon } from "src/assets/images/tick.svg";
-import { Text } from "src/components";
 
 export function FeaturesChecklist() {
   return (

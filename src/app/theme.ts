@@ -1,4 +1,4 @@
-import { createTheme } from "@mantine/core";
+import { Text, Title, createTheme } from "@mantine/core";
 
 export const theme = createTheme({
   colors: {
@@ -50,10 +50,7 @@ export const theme = createTheme({
     xl: "40px",
   },
   components: {
-    Text: {
-      defaultProps: {
-        classNames: ["test"],
-      }
-    }
-  }
+    Text: Text.extend({ classNames: { root: "text-default" } }),
+    Title: Title.extend({ classNames: { root: "title-default" } }),
+  },
 });

@@ -32,3 +32,10 @@
   font-style: normal;
 }
 
+.text-default {
+  font-feature-settings: 'clig' off, 'liga' off;
+}
+
+.title-default {
+  font-feature-settings: 'clig' off, 'liga' off;
+}
