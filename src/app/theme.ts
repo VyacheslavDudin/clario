@@ -36,10 +36,10 @@ export const theme = createTheme({
     fontFamily: "Moderat",
     fontWeight: "700",
     sizes: {
-      h1: { fontSize: "36px" },
-      h2: { fontSize: "26px" },
-      h4: { fontSize: "18px" },
-      h5: { fontSize: "16px" },
+      h1: { fontSize: "36px", lineHeight: "36px", fontWeight: "700" },
+      h2: { fontSize: "26px", lineHeight: "30px", fontWeight: "700" },
+      h4: { fontSize: "18px", lineHeight: "22px", fontWeight: "700" },
+      h5: { fontSize: "16px", lineHeight: "20px", fontWeight: "700" },
     },
   },
   spacing: {
