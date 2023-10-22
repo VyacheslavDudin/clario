@@ -1,7 +1,7 @@
 import { FC, SVGProps } from "react";
-import { Box, CenterProps, Flex, Stack } from "@mantine/core";
+import { CenterProps, Stack } from "@mantine/core";
 
-import { Text, Title } from "src/components";
+import { FeaturePoint, Text, Title } from "src/components";
 
 import { FeatureImage } from "./FeatureImage";
 
@@ -30,12 +30,7 @@ export function FeatureCard({ bg, imgSrc, title, subtitle, points }: Props) {
       </Stack>
       <Stack gap="15px">
         {points.map(({ text, icon: Icon }) => (
-          <Flex gap="xs" key={text} align="center" ta="start">
-            <Box><Icon /></Box>
-            <Text size="md" fw={700}>
-              {text}
-            </Text>
-          </Flex>
+          <FeaturePoint key={text} text={text} icon={<Icon />} />
         ))}
       </Stack>
     </Stack>
