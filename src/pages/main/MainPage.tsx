@@ -5,6 +5,7 @@ import {
   StepsSection,
   PricingSection,
   CarouselSection,
+  FooterActionSection,
 } from "./containers";
 
 export function MainPage() {
@@ -15,6 +16,7 @@ export function MainPage() {
       <StepsSection />
       <PricingSection />
       <CarouselSection />
+      <FooterActionSection />
     </Layout>
   );
 }
