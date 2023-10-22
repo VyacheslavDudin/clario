@@ -1,0 +1,10 @@
+.button {
+  letter-spacing: -0.54px;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: var(--mantine-color-main-8);
+  opacity: 0.9;
+}

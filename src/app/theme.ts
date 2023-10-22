@@ -3,16 +3,16 @@ import { createTheme } from "@mantine/core";
 export const theme = createTheme({
   colors: {
     main: [
-      "#FFFFFF",
-      "#EFF1FF",
-      "#EAF5E4",
-      "#E6F2FE",
-      "#FFF2EB",
-      "#5CD6C0",
-      "#DF723A",
-      "#6C96CE",
-      "#483FDD",
-      "#151D51",
+      "#FFFFFF", // 0
+      "#EFF1FF", // 1
+      "#EAF5E4", // 2
+      "#E6F2FE", // 3
+      "#FFF2EB", // 4
+      "#5CD6C0", // 5
+      "#DF723A", // 6
+      "#6C96CE", // 7
+      "#483FDD", // 8
+      "#151D51", // 9
     ],
   },
   primaryColor: "main",
@@ -49,4 +49,11 @@ export const theme = createTheme({
     lg: "24px",
     xl: "40px",
   },
+  components: {
+    Text: {
+      defaultProps: {
+        classNames: ["test"],
+      }
+    }
+  }
 });

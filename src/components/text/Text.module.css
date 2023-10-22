@@ -1,0 +1,12 @@
+.title {
+  color: var(--mantine-color-main-8);
+  font-feature-settings: 'clig' off, 'liga' off;
+}
+
+.title::first-line {
+  color: var(--mantine-color-main-9);
+}
+
+.text {
+  font-feature-settings: 'clig' off, 'liga' off;
+}
