@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Box, Flex } from "@mantine/core";
+import { Center, Flex } from "@mantine/core";
 
 import { Text } from "src/components";
 
@@ -11,7 +11,7 @@ type Props = {
 export function SmallOffer({ text, icon }: Props) {
   return (
     <Flex gap="xs" align="center" ta="start">
-      <Box>{icon}</Box>
+      <Center>{icon}</Center>
       <Text size="sm" fw={400}>
         {text}
       </Text>

@@ -1,7 +1,8 @@
-import { FC, SVGProps } from "react";
+import { FC, SVGProps, useRef } from "react";
 import { CenterProps, Stack } from "@mantine/core";
 
 import { FeaturePoint, Text, Title } from "src/components";
+import { useTrackView } from "src/hooks";
 
 import { FeatureImage } from "./FeatureImage";
 
@@ -19,8 +20,11 @@ type Props = {
 };
 
 export function FeatureCard({ bg, imgSrc, title, subtitle, points }: Props) {
+  const ref = useRef<HTMLDivElement>(null);
+  useTrackView(ref, title);
+
   return (
-    <Stack gap="15px">
+    <Stack gap="15px" ref={ref}>
       <FeatureImage src={imgSrc} bg={bg} />
       <Stack gap={0}>
         <Title order={4} lts={-0.417}>

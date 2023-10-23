@@ -1,7 +1,8 @@
+import { useButtonHandlerContext } from "src/contexts";
 import { Button, Container, Text, Title } from "src/components";
 
 export function FooterActionSection() {
-  const onClick = () => {};
+  const { handleButtonClick } = useButtonHandlerContext();
 
   return (
     <Container bg="main.0" pt="70px" pb="80px" gap="xl">
@@ -12,7 +13,7 @@ export function FooterActionSection() {
         </Text>
         .
       </Title>
-      <Button text="Protect me now" onClick={onClick} />
+      <Button text="Protect me now" onClick={handleButtonClick} />
     </Container>
   );
 }

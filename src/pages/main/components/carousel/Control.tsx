@@ -11,7 +11,7 @@ export function Control({ children }: PropsWithChildren) {
       bg="main.0"
       style={{
         borderRadius: "50%",
-        filter: "drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.10));",
+        filter: "drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.10))",
       }}
     >
       {children}

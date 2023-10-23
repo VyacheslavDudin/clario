@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-const INITIAL_SECS = 1800;
+const SECS_IN_30_MINS = 1800;
 const DEFAULT_COUNTDOWN_KEY_NAME = "COUNTDOWN_TIME";
 const SECS_IN_MINUTE = 60;
 
 export function useCountdown(
   key = DEFAULT_COUNTDOWN_KEY_NAME,
-  initialSecs = INITIAL_SECS
+  initialSecs = SECS_IN_30_MINS
 ) {
   const initialSeconds = localStorage.getItem(key) || initialSecs;
   const [seconds, setSeconds] = useState(+initialSeconds);

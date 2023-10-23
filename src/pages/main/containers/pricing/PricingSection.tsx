@@ -1,5 +1,6 @@
 import { Center, Image, Stack } from "@mantine/core";
 
+import { useButtonHandlerContext } from "src/contexts";
 import { Button, Container, FeaturePoint, Text, Title } from "src/components";
 import StartWeekImg from "src/assets/images/start-week.png";
 
@@ -7,10 +8,11 @@ import { SpecialOffer, Price, SmallOffer } from "../../components";
 import { pricingFeatures, smallOffers } from "./pricingOffer";
 
 export function PricingSection() {
+  const { ref } = useButtonHandlerContext();
   const onClick = () => {};
 
   return (
-    <Stack gap="md" bg="main.8">
+    <Stack gap="md" bg="main.8" ref={ref}>
       <Image src={StartWeekImg} />
       <Container bg="main.8" pt="md" pb="xl" gap="md">
         <Title order={2} c="main.0" lts={-0.44} lh="30px">
