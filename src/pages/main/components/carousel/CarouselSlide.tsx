@@ -14,13 +14,13 @@ export type SlideProps = {
 
 export function CarouselSlide({ icon, bg, text, author, textColor }: SlideProps) {
   return (
-    <Carousel.Slide w={270} h={340}>
+    <Carousel.Slide w="100%" h={340}>
       <Container
         py="xl"
         bg={bg}
         align="start"
         ta="start"
-        w={270}
+        w="100%"
         h={340}
         justify="space-between"
         style={{ borderRadius: 20 }}

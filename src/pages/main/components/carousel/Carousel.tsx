@@ -12,7 +12,7 @@ type Props = {
 export const Carousel = memo(({ slides }: Props) => {
   return (
     <MantineCarousel
-      w={320}
+      w="calc(100% + 48px)"
       slideGap="12px"
       draggable
       slideSize="85%"
