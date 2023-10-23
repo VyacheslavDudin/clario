@@ -10,5 +10,5 @@ export function useTrackView(ref: RefObject<HTMLElement>, name: string) {
       isVisitedRef.current = true;
       console.log(`Feature Shown: <${name}>`);
     }
-  }, [ref, isVisible]);
+  }, [ref, isVisible, name]);
 }

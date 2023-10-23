@@ -26,7 +26,7 @@ export function useCountdown({
       const startedAt = new Date().toISOString();
       timerRef.current.startedAt = startedAt;
       localStorage.setItem(key, startedAt);
-      setSeconds(seconds - 1);
+      setSeconds(secs => secs - 1);
     }
   }, [key, shouldStart]);
 
