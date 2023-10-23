@@ -4,7 +4,7 @@
   font-weight: 700;
 }
 
-.button:hover {
+.button:not(:disabled):hover {
   background-color: var(--mantine-color-main-8);
   opacity: 0.9;
 }

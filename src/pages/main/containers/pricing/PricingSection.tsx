@@ -1,6 +1,7 @@
 import { Center, Image, Stack } from "@mantine/core";
 
 import { useButtonHandlerContext } from "src/contexts";
+import { useCountdown } from "src/hooks";
 import { Button, Container, FeaturePoint, Text, Title } from "src/components";
 import StartWeekImg from "src/assets/images/start-week.png";
 
@@ -9,6 +10,8 @@ import { pricingFeatures, smallOffers } from "./pricingOffer";
 
 export function PricingSection() {
   const { ref } = useButtonHandlerContext();
+  const { isActive } = useCountdown({ shouldStart: false });
+
   const onClick = () => {};
 
   return (
@@ -47,7 +50,7 @@ export function PricingSection() {
               ))}
             </Stack>
           </Container>
-          <Button text="Try for $2.99" onClick={onClick} />
+          <Button disabled={!isActive} text="Try for $2.99" onClick={onClick} />
           <Text my="sm" size="xs" opacity={0.5}>
             By clicking above, you agree to try 7 days of Clario for $2.99 as a
             special offer. Your subscription will renew for $39.9/month every 2
